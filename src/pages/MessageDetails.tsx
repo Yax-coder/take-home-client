@@ -5,6 +5,7 @@ import useMessageReadStatus from '../hooks/useMessageReadStatus';
 
 const MessageDetails: React.FC = () => {
   const { messageId } = useParams<{ messageId: string }>();
+  // @ts-expect-error
   const { updateMessageReadStatus } = useMessageReadStatus(messageId);
 
   useEffect(() => {

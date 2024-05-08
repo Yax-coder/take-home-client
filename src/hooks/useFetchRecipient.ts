@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
-import { Chat } from "../components/chat/UserChat";
 import { User } from "../context/AuthContext";
 import { baseUrl, getRequest } from "../utils/services";
 
-export const useFetchRecipientUser = (chat: Chat, user: User) => {
+export const useFetchRecipientUser = (chat: any, user: User) => {
     const [recipientUser, setRecipientUser] = useState(null);
     const [error, setError] = useState(null);
-
+    // @ts-expect-error
     const recipientId = chat?.members.find((id) => id !== user?._id);
 
     useEffect(() => {

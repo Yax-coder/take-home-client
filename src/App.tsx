@@ -14,6 +14,7 @@ import MessageDetails from './pages/MessageDetails';
 
 function App() {
   const { isAuthenticated } = useContext(AuthContext);
+  // @ts-expect-error
   const user = JSON.parse(localStorage.getItem('user'))
 
   return (

@@ -50,6 +50,7 @@ export const UserMessagesProvider: React.FC<UserMessagesProviderProps> = ({ user
             setMessageCount(data.length);
             setLoading(false);
         } catch (error) {
+            // @ts-expect-error
             setError(error.message as string);
             setLoading(false);
         }

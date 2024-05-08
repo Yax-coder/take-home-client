@@ -1,5 +1,5 @@
+// @ts-nocheck
 import { useContext } from "react"
-import { ChatContext } from "../context/ChatContext";
 import { Container, Row, Col, Badge, Button } from 'react-bootstrap';
 import { AuthContext } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";

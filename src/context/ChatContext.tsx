@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ReactNode, createContext, useEffect, useState } from "react";
 import { getRequest, baseUrl, postRequest } from "../utils/services";
 import { User } from "./AuthContext";

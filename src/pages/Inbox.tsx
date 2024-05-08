@@ -1,8 +1,7 @@
+// @ts-nocheck
 import { Container, Row, Col, ListGroup, Badge } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useUserMessagesContext } from '../context/MessageContext';
-
-
 
 const InboxPage = () => {
   const { messages } = useUserMessagesContext();

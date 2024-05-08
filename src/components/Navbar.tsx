@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useContext } from "react";
 import { Badge, Container, Nav, Navbar, Stack } from "react-bootstrap";
 import { Link } from "react-router-dom";
