@@ -18,12 +18,12 @@ const InboxPage = () => {
                 {messages.map((message) => (
                   <Link key={message._id} to={`/inbox/${message._id}`} className="list-group-item list-group-item-action">
                     <ListGroup.Item>
-                      <h5>{message.subject}</h5>
-                      <p>{message.content}</p>
+                      <h5><b>Subject:</b> {message.subject}</h5>
+                      <p> <b>Message:</b> {message?.content?.slice(0, 15)} </p>
                       {message.isRead ? (
-                        <Badge variant="success">Read</Badge>
+                        <Badge className='bg-secondary'>Read</Badge>
                       ) : (
-                        <Badge variant="danger">Unread</Badge>
+                        <Badge >Unread</Badge>
                       )}
                     </ListGroup.Item>
                   </Link>

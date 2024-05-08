@@ -25,7 +25,6 @@ const NavBar = () => {
                                 {unreadMessagesCount === 0 ? "View" : "Unread"}  Messages {` `}
                                     {unreadMessagesCount > 0 && <Badge variant="danger">{unreadMessagesCount}</Badge>}
                                 </Nav.Link>
-                                <Link to='/inbox' className="link-light text-decoration-none">Inbox</Link>
 
                                 <Link onClick={() => logoutUser()} to='/login' className="link-light text-decoration-none">
                                     Logout
